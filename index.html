@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DN Investments</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="#" class="logo">DN <span>Investments</span></a>
+    <nav>
+      <a href="#strategy">Strategy</a>
+      <a href="#performance">Performance</a>
+      <a href="#contact" class="btn primary">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Grow Your Wealth Smartly</h1>
+    <p>Educational investment strategies, mock performance, and insights for learning.</p>
+    <a href="#contact" class="btn primary">Get in Touch</a>
+  </div>
+</section>
+
+<section id="strategy" class="features alt">
+  <div class="container">
+    <h2>Our Strategy</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Diversification</h3>
+        <p>Spread across sectors to reduce risk.</p>
+      </div>
+      <div class="card">
+        <h3>Long-term Focus</h3>
+        <p>Patience and discipline yield consistent results.</p>
+      </div>
+      <div class="card">
+        <h3>Data-driven</h3>
+        <p>Mock analysis and metrics for education.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="performance">
+  <div class="container">
+    <h2>Performance (Mock)</h2>
+    <div class="perf">
+      <div class="perf-stat"><span class="label">CAGR</span><span id="cagr" class="value">--%</span></div>
+      <div class="perf-stat"><span class="label">Max Drawdown</span><span id="maxdd" class="value">--%</span></div>
+      <div class="perf-stat"><span class="label">Sharpe</span><span id="sharpe" class="value">--</span></div>
+    </div>
+    <canvas id="equityChart" width="900" height="300"></canvas>
+  </div>
+</section>
+
+<section id="contact" class="alt">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <form class="contact-form" action="https://formspree.io/f/<your-form-id>" method="POST">
+      <label>Name <input type="text" name="name" required></label>
+      <label>Email <input type="email" name="email" required></label>
+      <label>Message <textarea name="message" rows="4" required></textarea></label>
+      <button type="submit" class="btn primary">Send</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer container">
+  <p class="muted tiny">&copy; <span id="year"></span> DN Investments. For educational purposes only. Not real financial advice.</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
